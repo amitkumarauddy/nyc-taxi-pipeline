@@ -1,0 +1,9 @@
+services:
+  localstack:
+    image: localstack/localstack:3.4.0
+    container_name: mock-aws-cloud
+    ports:
+      - "127.0.0.1:4566:4566"
+    environment:
+      - SERVICES=s3
+      - DEBUG=1c
