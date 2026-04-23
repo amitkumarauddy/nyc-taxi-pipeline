@@ -1,7 +1,7 @@
 import duckdb
 
 # Point directly to your freshly forged Gold dataset
-gold_data_path = "../data/gold/daily_revenue_metrics.parquet"
+gold_data_path = "data/gold/daily_revenue_metrics.parquet"
 
 print("Summoning DuckDB to analyze Gold metrics...\n")
 

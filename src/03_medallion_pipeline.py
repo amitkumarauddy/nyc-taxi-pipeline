@@ -1,8 +1,8 @@
 import polars as pl
 
-bronze_data_path = "../data/yellow_tripdata_2025-*.parquet"
-silver_data_path = "../data/silver/clean_taxi_data.parquet"
-gold_data_path = "../data/gold/daily_revenue_metrics.parquet"
+bronze_data_path = "data/yellow_tripdata_2025-*.parquet"
+silver_data_path = "data/silver/clean_taxi_data.parquet"
+gold_data_path = "data/gold/daily_revenue_metrics.parquet"
 
 print("Initiating Medallion Architecture Forge...")
 

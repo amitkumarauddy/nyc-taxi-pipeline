@@ -2,7 +2,7 @@ import polars as pl
 import duckdb
 
 # 1. Define the path to your data
-data_path = "../data/yellow_tripdata_2025-01.parquet"
+data_path = "data/yellow_tripdata_2025-01.parquet"
 
 # 2. Use Polars to lazily scan the file (super fast, uses very little memory)
 print("Scanning dataset with Polars...")
