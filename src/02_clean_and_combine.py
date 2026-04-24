@@ -3,7 +3,7 @@ import polars as pl
 # 1. THE WILDCARD (Globbing)
 # By using the asterisk (*), we tell Polars to grab any file that matches this pattern.
 # This single line automatically targets both your January and February files.
-data_path = "data/yellow_tripdata_2025-*.parquet"
+data_path = "data/raw/yellow_tripdata_2025-*.parquet"
 
 print("Initiating lazy scan of multiple months...")
 

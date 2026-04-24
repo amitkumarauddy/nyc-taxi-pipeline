@@ -77,3 +77,14 @@ Scanning Gold dataset into memory...
 Initiating network transfer: Pushing 369 rows to the i3 Command Center...
 Transfer complete! The data has successfully crossed the network.
 End-to-End Pipeline Complete!
+
+
+
+docker compose up -d
+
+
+docker ps
+
+awslocal s3 mb s3://taxi-data-lake
+
+awslocal s3 ls s3://taxi-data-lake --recursive
