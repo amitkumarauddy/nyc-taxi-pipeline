@@ -5,3 +5,9 @@ services:
     volumes:
       - ./data:/app/data
     command: make PYTHON=python run-all
+    networks:
+      - nyc-taxi-pipeline_default
+
+networks:
+  nyc-taxi-pipeline_default:
+    external: true

@@ -11,7 +11,7 @@ for i in {01..12}; do
   # wget -nc prevents downloading if the file already exists
   # -qO- suppresses the giant progress bar so the terminal stays clean
   # -P routes the downloaded file straight into your data folder
-  wget -nc -P data/ "$url"
+  wget -nc -P data/raw/ "$url"
 done
 
 echo "Extraction complete. The vault is full."

@@ -55,7 +55,8 @@ docker compose -f docker-compose.pipeline.yml run --rm pipeline
 ```bash
 # Start LocalStack for S3 mock
 docker compose up -d
-
+# Create bucket: 
+`awslocal s3 mb s3://taxi-data-lake`
 # Run pipeline (includes S3 upload)
 docker compose -f docker-compose.pipeline.yml run --rm pipeline
 ```
@@ -123,7 +124,7 @@ docker compose -f docker-compose.pipeline.yml run --rm pipeline
 # Build custom image
 docker build -t nyc-taxi-pipeline .
 
-# Run Airflow (orchestration)
+# Run Airflow (orchestration)c
 cd airflow-ops
 docker compose up -d
 ```
