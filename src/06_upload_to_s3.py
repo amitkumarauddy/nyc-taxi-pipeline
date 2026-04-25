@@ -1,6 +1,4 @@
 import boto3
-import os
-import time
 
 print("Connecting to local AWS S3...")
 

@@ -1,5 +1,4 @@
 import polars as pl
-import duckdb
 
 # 1. Define the path to your data
 data_path = "data/raw/yellow_tripdata_2025-01.parquet"
